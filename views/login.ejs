@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<main>
+    <section id="card">
+        <h1>App - Login</h1>
+
+        <form action="/login" method="POST">
+            <div id="card-mid">
+                <div>
+                    <input type="username" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div>
+                    <input type="password" id="password-input" name="password" placeholder="Password" required>
+                </div>
+                <button class="submit-btn" type="submit">Login</button> 
+            </div>
+        </form>
+</main>
+
+<%- include('partials/footer') %>
