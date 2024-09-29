@@ -9,16 +9,11 @@ const app = express();
 const port = 3000;
 
 // Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+
 
 // MySQL connection
 const db = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: 'pass1234', // replace with your own database password
-    database: 'salvage_db'    // replace with your own database name
+
 });
 
 db.connect(err => {
